@@ -258,7 +258,7 @@ const encrypted = encrypt.encryptOAEP(data);
 // Decrypt with OAEP padding and SHA-256 hash
 const decrypt = new JSEncrypt();
 decrypt.setPrivateKey(privateKey);
-const decrypted = decrypt.encryptOAEP(encrypted);
+const decrypted = decrypt.decryptOAEP(encrypted);
 ```
 
 ### Supported Hash Functions
